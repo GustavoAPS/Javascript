@@ -57,5 +57,5 @@ alert("Hi " + name)
 
 ```
 
-[Varibles and Data Types](references/operators.md)
+[Varibles and Data Types](references/variables_data_types.md)
 [Operators](references/operators.md)
