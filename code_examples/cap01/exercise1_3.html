@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const productPrice = Number(prompt("Inform the product price:"))
+        const discount = productPrice - (productPrice * 0.1)
+        const instalments = productPrice / 3
+
+        alert(`-Full price: ${productPrice}\n-Upfront discount: ${discount.toFixed(2)}\n-3 instalments of :${instalments}`)
+    </script>
+</body>
+
+</html>
