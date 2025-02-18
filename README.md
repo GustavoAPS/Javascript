@@ -57,5 +57,16 @@ alert("Hi " + name)
 
 ```
 
+#### Link Javascript file to HTML
+
+To link a javascript file to a HTML page we can use the tag script with the path to the file
+
+```html
+<body>
+    <script src="script.js"></script>
+</body>
+```
+This example assumes that the script file is in the same folder as the index.html
+
 [Varibles and Data Types](references/variables_data_types.md)
 [Operators](references/operators.md)
