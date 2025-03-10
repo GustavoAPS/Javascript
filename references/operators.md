@@ -1,5 +1,7 @@
 # JavaScript Operators
 
+An operator is a way to transform or combine values.
+
 ## Summary
 JavaScript has a variety of operators for different purposes:
 - **Arithmetic** (`+`, `-`, `*`, `/`, `%`, `**`)
@@ -56,7 +58,7 @@ Used for boolean logic.
 | Operator | Description | Example | Result |
 |----------|------------|---------|--------|
 | `&&`  | Logical AND | `true && false` | `false` |
-| `||`  | Logical OR | `true || false` | `true` |
+| `\|\|`  | Logical OR | `true \|\| false` | `true` |
 | `!`   | Logical NOT | `!true` | `false` |
 
 ## 5. Bitwise Operators

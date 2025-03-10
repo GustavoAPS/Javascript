@@ -49,3 +49,6 @@ Variables can be declared using:
 **Note:** JavaScript is dynamically typed, meaning variables can change their type at runtime.
 <br>
 **Note:** In JavaScript the value has a type, not the varible.
+<br>
+**Note:** In JavaScript there is a notorious bug where `
+typeof null` returns `object` and not `null`.
