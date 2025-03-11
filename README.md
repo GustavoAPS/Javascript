@@ -4,7 +4,7 @@ JavaScript (JS) is a high-level, interpreted programming language primarily used
 
 ## Table of Contents
 
-- [First Steps](references/first_steps)
+- [First Steps](references/first_steps.md)
 - [Varibles and Data Types](references/variables_data_types.md)
 - [Operators](references/operators.md)
 - [Strings](references/strings.md)
