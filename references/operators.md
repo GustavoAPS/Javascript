@@ -13,6 +13,50 @@ JavaScript has a variety of operators for different purposes:
 - **Type Checking** (`typeof`, `instanceof`)
 - **Advanced** (`...`, `?.`, `??`)
 
+## Operator Precedence
+
+Operator precedence determines the order in which operators are evaluated in an expression. Operators with higher precedence are evaluated before operators with lower precedence. When operators have the same precedence, associativity (left-to-right or right-to-left) determines the order of evaluation.
+
+Here's a simplified table showing the precedence of JavaScript operators, from highest to lowest:
+
+| Precedence | Operator Type | Operators | Associativity |
+|------------|-----------------|-----------|---------------|
+| 20         | Grouping        | `( )`     | N/A           |
+| 19         | Member Access   | `.` `[ ]` `?.` | Left-to-right |
+| 18         | Optional Chaining | `?.` | Left-to-right |
+| 17         | Function Call / `new` | `( )` `new` | Left-to-right |
+| 16         | Postfix Increment/Decrement | `++` `--` | N/A |
+| 15         | Logical NOT / Bitwise NOT / Unary Plus/Minus / `typeof` / `void` / `delete` / `await` | `! ~ + - typeof void delete await` | Right-to-left |
+| 14         | Exponentiation | `**` | Right-to-left |
+| 13         | Multiplication / Division / Remainder | `* / %` | Left-to-right |
+| 12         | Addition / Subtraction | `+ -` | Left-to-right |
+| 11         | Bitwise Shift | `<< >> >>>` | Left-to-right |
+| 10         | Relational | `< <= > >= instanceof in` | Left-to-right |
+| 9          | Equality | `== != === !==` | Left-to-right |
+| 8          | Bitwise AND | `&` | Left-to-right |
+| 7          | Bitwise XOR | `^` | Left-to-right |
+| 6          | Bitwise OR | `\|` | Left-to-right |
+| 5          | Logical AND | `&&` | Left-to-right |
+| 4          | Logical OR / Nullish Coalescing | `\|\| ??` | Left-to-right |
+| 3          | Conditional (Ternary) | `? :` | Right-to-left |
+| 2          | Assignment | `= += -= *= /= %= **= <<= >>= >>>= &= ^= \|=` | Right-to-left |
+| 1          | Comma | `,` | Left-to-right |
+
+**Key Points:**
+
+* **Parentheses `( )`:** Parentheses have the highest precedence, allowing you to override the default precedence.
+* **Associativity:**
+    * Left-to-right: Operators are evaluated from left to right (e.g., `a + b + c` is evaluated as `(a + b) + c`).
+    * Right-to-left: Operators are evaluated from right to left (e.g., `a = b = 5` is evaluated as `a = (b = 5)`).
+* **Understanding precedence is crucial** for writing correct and predictable code. When in doubt, use parentheses to explicitly define the order of operations.
+
+**Example:**
+
+```javascript
+let result = 5 + 3 * 2; // result will be 11 because multiplication has higher precedence than addition.
+let result2 = (5 + 3) * 2; // result2 will be 16 because parentheses override the default precedence.
+```
+
 ## 1. Arithmetic Operators
 Used for mathematical calculations.
 
@@ -67,7 +111,7 @@ Operate on binary representations of numbers.
 | Operator | Description | Example (`5 & 3`) | Binary Operation | Result |
 |----------|------------|------------------|----------------|--------|
 | `&`  | AND | `5 & 3` | `101 & 011` | `1` |
-| `|`  | OR | `5 | 3` | `101 | 011` | `7` |
+| `\|`  | OR | `5 \| 3` | `101 \| 011` | `7` |
 | `^`  | XOR | `5 ^ 3` | `101 ^ 011` | `6` |
 | `~`  | NOT | `~5` | `~(101)` | `-6` |
 | `<<` | Left shift | `5 << 1` | `101 << 1` | `10` |
